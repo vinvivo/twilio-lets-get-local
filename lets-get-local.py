@@ -8,9 +8,9 @@ client = Client(account_sid, auth_token)
 currenttime = datetime.now().strftime('%H:%M:%S')
 
 message = client.messages.create(
-    to="+12092104311",
+    to="+14153007522",
     from_="+14159657284",
-    body="Greetings! The current time is: {currenttime} NQ3NHO9ABIUJDVV"
+    body="Greetings! The current time is: {} NQ3NHO9ABIUJDVV".format(currenttime)
 )
 
 print(message.sid)
